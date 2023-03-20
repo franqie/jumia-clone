@@ -1,0 +1,70 @@
+.sidebar {
+    width: 195px;
+    height: 352px;
+    font-size: 0.85rem;
+    /* z-index: 5; */
+}
+
+.submenu {
+    height: 352px;
+    flex-wrap: wrap;
+    overflow: hidden;
+    left: 0;
+    box-shadow: 0 2px 5px 0 rgb(0, 0, 0, 0.05);
+    z-index: 5;
+}
+
+.sublink:hover,
+.menu-item:hover {
+  color: #f68b1e;
+}
+
+.sidebar .submenu:hover {
+    box-shadow: 0 0 10px 0 rgb(0, 0, 0, 0.15);
+}
+
+.submenu .menu-item {
+    width: 195px;
+    height: 32px;
+    cursor: pointer;
+}
+
+.menu-item svg {
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+}
+
+.submenu .flyout {
+    width: 0;
+    height: 352px;
+    visibility: hidden;
+    opacity: 0;
+    order: 99;
+    box-shadow: inset 1px 0 1px 0px #ededed;
+    /* transition: all .2s; */
+}
+
+.submenu .flyout:hover,
+.submenu .menu-item:hover + .flyout {
+    width: 868px !important;
+    opacity: 1;
+    visibility: visible;
+}
+
+.sublink {
+    cursor: pointer;
+}
+
+.item {
+    width: 182px;
+    cursor: pointer;
+    color: #75757a;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.item:hover {
+    color: #282828;
+    font-weight: 500;
+}
