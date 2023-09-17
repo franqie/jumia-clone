@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaAngleUp } from 'react-icons/fa';
-import { useGlobalContext } from '../context';
-import useWindowSize from '../utils/useWindowSize';
+import { useGlobalContext } from '../utils/context/context';
+import useWindowSize from '../utils/hooks/useWindowSize';
 
 const BackToTop = () => {
     const {scrollUp} = useGlobalContext();

@@ -1,5 +1,5 @@
 import React from 'react';
-import links from "../data";
+import links from "../utils/data/data";
 import Sublinks from './Sublinks';
 import  "./sidebar.css";
 

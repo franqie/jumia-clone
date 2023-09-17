@@ -1,0 +1,28 @@
+// custom variables
+// $primary: #f68b1e;
+
+// import bootstrap function and variable
+@import "../../../node_modules/bootstrap/scss/_functions";
+@import "../../../node_modules/bootstrap/scss/_variables";
+
+$custom-theme-colors: (
+    "orange": #f68b1e,
+    "orangedark": #c9731c,
+    "graylight": #c7c7cd,
+    "darktext": #282828,
+    "bordercolor": #a3a3ab,
+    "iconfill": #75757a,
+    "normaltext": #313133,
+    "footer": #464646,
+    "lightpink": #e9e7ee,
+);
+
+$theme-colors : map-merge($custom-theme-colors, $theme-colors );
+
+
+// enable negative margins
+$enable-negative-margins: true;
+
+
+// import bootstrap
+@import "../../../node_modules/bootstrap/scss/bootstrap" ;

@@ -1,11 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.js';
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import './index.css';
+import './styles/css/main.min.css';
+import './style.css';
 import App from './App';
-import { AppProvider } from './context';
+import { AppProvider } from './utils/context/context';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

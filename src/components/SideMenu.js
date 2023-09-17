@@ -1,5 +1,5 @@
 import React from 'react';
-import { useGlobalContext } from '../context';
+import { useGlobalContext } from '../utils/context/context';
 import logo from "../images/logo.svg";
 
 const SideMenu = () => {

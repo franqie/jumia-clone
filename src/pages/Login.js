@@ -1,11 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import MiniHeader from '../components/MiniHeader';
 
 const Login = () => {
   return (
     <>
-        <MiniHeader/>
         <main className="account bg-white w-100 h-100">        
             <div className="section mx-auto py-5">
                 <div className="customer login mx-auto">
