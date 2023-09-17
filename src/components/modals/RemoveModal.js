@@ -18,7 +18,7 @@ const RemoveModal = () => {
     }
 
   return (
-    <div className={`custome-modal opacity-0 pe-none ${ showRemoveModal && "opacity-100 bg-opacity-50 pe-auto" } bg-normaltext position-fixed top-0 start-0 bottom-0 end-0 d-flex justify-content-center align-items-center`} onClick={()=>setShowRemoveModal(false)}>
+    <div className={`custom-modal opacity-0 pe-none ${ showRemoveModal && "opacity-100 bg-opacity-50 pe-auto" } bg-normaltext position-fixed top-0 start-0 bottom-0 end-0 d-flex justify-content-center align-items-center`} onClick={()=>setShowRemoveModal(false)}>
         <div className="custom_modal-container bg-white rounded-1 position-relative" onClick={(e)=>e.stopPropagation()}>
             <button onClick={()=>setShowRemoveModal(false)} type="button" className="btn position-absolute end-0 top-0 fs-5 p-3 border-0"><FaTimes/></button>
             <h2 className="h5 m-0 px-4 pt-4">Remove from cart?</h2>
