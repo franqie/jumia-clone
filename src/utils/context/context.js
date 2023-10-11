@@ -17,7 +17,6 @@ const AppProvider = ({children}) => {
   const [hideText, setHideText] = useState(false);
   const [account, setAccount] = useState(false);
   const [help, setHelp] = useState(false);
-  // console.log(cart);
 
 
 
@@ -35,7 +34,7 @@ const AppProvider = ({children}) => {
 
   const inCart = (id)=>{
     const checkCart = cart.some((item)=>{
-      return item.id === id;
+      return item.productId === id;
     });
     return checkCart;
   };

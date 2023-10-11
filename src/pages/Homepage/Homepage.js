@@ -1,5 +1,5 @@
 import React from 'react';
-import Slider from '../../components/Slider';
+// import Slider from '../../components/Slider';
 import LargeSlider from '../../components/slider/LargeSlider';
 import ScrollList from '../../components/scrolllists/ScrollList';
 import LargeScrollList from '../../components/scrolllists/LargeScrollList';

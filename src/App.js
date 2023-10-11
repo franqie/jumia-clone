@@ -1,7 +1,7 @@
-import { BrowserRouter as Router, Routes, Route, Outlet } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import AlertModal from './components/modals/AlertModal';
 import SideMenu from './components/SideMenu';
-import Footer from './components/Footer';
+// import Footer from './components/Footer';
 import RemoveModal from './components/modals/RemoveModal';
 // import ScrollToTop from './components/ScrollToTop';
 import Cart from './pages/Cart';
@@ -20,7 +20,7 @@ function App() {
     <Router>
       {/* <div className="d-flex flex-column"> */}
       <div className="bg-lightpink">
-        {/* < SideMenu/> */}
+        < SideMenu/>
         <Routes>
           <Route path="/" element={<SharedLayout />}>
             <Route index element={<Homepage />} />

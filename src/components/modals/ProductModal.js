@@ -16,7 +16,7 @@ const ProductModal = () => {
         return item.productId === productId;
       });
       setSingleProduct(arr);
-    },[ productId, data ]);
+    },[ productId, data, showModal ]);
 
     const [productObj] = singleProduct;
     const { productId: id, imageUrlFull, name, price, category } = productObj || {};
@@ -30,7 +30,6 @@ const ProductModal = () => {
 
 
     const handleClick = ()=>{
-      console.log(id, inCart(id));
       if(inCart(id)){        
         setShowModal(false);
         navigate("/cart");

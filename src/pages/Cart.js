@@ -24,13 +24,13 @@ const Cart = () => {
     totalAmount = totalAmount.toFixed(2);
 
     return (
-        <main className="py-md-4 px-md-3 bg-lightbg">
+        <main className="py-md-4 px-0 px-md-3 bg-lightbg">
             <div className="row p-0 m-0 mx-auto mt-2">
                 {cart.length > 0 ?
                     <>
-                        <div className="col-lg-9">
-                            <article className="">
-                                <div className="p-3 border-bottom border-borderColor">
+                        <div className="px-0 px-lg-3 col-lg-9">
+                            <article className="bg-white rounded">
+                                <div className="p-3">
                                     <h2 className="h5 m-0">Cart ({total})</h2>
                                 </div>
                                 <div className="">
@@ -44,12 +44,12 @@ const Cart = () => {
                                             // category
                                         } = cartItem;
                                         return (
-                                            <article key={id} className="py-3 px-2 border-bottom border-borderColor">
+                                            <article key={id} className="py-3 px-2 border-top border-borderColor">
                                                 <div className="d-flex gap-1" onClick={() => showProduct(id)}>
-                                                    <div className="w-100">
-                                                        <img src={imageUrlFull} alt="" className="" />
+                                                    <div className="w-50 d-flex align-items-center justify-content-center">
+                                                        <img src={imageUrlFull} alt="product" className="w-100" />
                                                     </div>
-                                                    <div className="w-100">
+                                                    <div className="w-100 flex-grow-1 ">
                                                         <div className="">
                                                             <p className="fw-bold text-uppercase mb-1">{name}</p>
                                                             <p className="txt desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit corrupti excepturi voluptas voluptatum</p>
@@ -82,7 +82,7 @@ const Cart = () => {
                         </div>
 
                         <div className="col-3 px-2 d-none d-lg-block">
-                            <article className="bg-white rounded shadow">
+                            <article className="bg-white rounded">
                                 <h6 className="h6 p-2 m-0">CART SUMMARY</h6>
                                 <div className="p-2 border-top border-bottom d-flex justify-content-between align-items-center">
                                     <p className="fs-6 h6 m-0">Subtotal</p>

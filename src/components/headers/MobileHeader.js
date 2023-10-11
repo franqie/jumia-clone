@@ -11,7 +11,7 @@ const MobileHeader = () => {
   return (
     <header className={`mobile-header ${ scrollDirection==="down" && "hide" } custom-shadow `}>
         <div className="container-fluid d-flex justify-content-between py-2">
-            <div className="left d-flex align-items-center">
+            <div className="d-flex align-items-center">
                 <button className="d-flex border-0 bg-transparent p-2" onClick={()=>setShowSidemenu(true)}>
                     <span className="material-symbols-outlined">menu</span>
                 </button>
