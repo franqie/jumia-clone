@@ -30,6 +30,7 @@ const ProductModal = () => {
 
 
     const handleClick = ()=>{
+      console.log(id, inCart(id));
       if(inCart(id)){        
         setShowModal(false);
         navigate("/cart");

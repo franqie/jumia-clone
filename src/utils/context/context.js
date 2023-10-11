@@ -17,6 +17,7 @@ const AppProvider = ({children}) => {
   const [hideText, setHideText] = useState(false);
   const [account, setAccount] = useState(false);
   const [help, setHelp] = useState(false);
+  // console.log(cart);
 
 
 
